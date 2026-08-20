@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jogo da Memória</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
+
         <h1>🧠 Jogo da Memória</h1>
 
-        <div class="info">
-            <p>Movimentos: <span id="movimentos">0</span></p>
-            <button id="reiniciar">Reiniciar</button>
+        <div class="painel">
+
+            <div>
+                <strong>Fase</strong>
+                <span id="fase">1</span>
+            </div>
+
+            <div>
+                <strong>Movimentos</strong>
+                <span id="movimentos">0</span>
+            </div>
+
+            <div>
+                <strong>Pares</strong>
+                <span id="pares">0</span>
+            </div>
+
         </div>
 
-        <div class="tabuleiro" id="tabuleiro">
-            <!-- As cartas serão criadas pelo JavaScript -->
+        <div class="botoes">
+            <button id="reiniciar">🔄 Reiniciar</button>
         </div>
 
-        <p id="mensagem"></p>
+        <div class="tabuleiro" id="tabuleiro"></div>
+
+        <div id="mensagem"></div>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
